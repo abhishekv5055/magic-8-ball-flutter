@@ -1,7 +1,7 @@
 ![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
 
 
-# Magic 8 Ball 🎱
+# Magic 8 Ball 🎱 <img src="images/ic_launcher.png" align="right" width="130px" />
 
 ## Our Goal
 
