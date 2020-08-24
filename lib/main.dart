@@ -1,4 +1,5 @@
-import 'package:flutter/cupertino.dart';
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(
@@ -20,12 +21,21 @@ class AskMeAnything extends StatefulWidget {
 }
 
 class _AskMeAnythingState extends State<AskMeAnything> {
+  int ballNumber = 1;
+
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Padding(
-        padding: EdgeInsets.all(24.0),
-        child: Image.asset('images/ball1.png'),
+        padding: EdgeInsets.all(8.0),
+        child: FlatButton(
+          onPressed: () {
+            setState(() {
+              ballNumber = Random().nextInt(5) + 1;
+            });
+          },
+          child: Image.asset('images/ball$ballNumber.png'),
+        ),
       ),
     );
   }
